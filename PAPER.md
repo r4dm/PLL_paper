@@ -220,15 +220,15 @@ Representative summary:
 
 ### 5.3 PAC per‑head
 
-Using the decoder mode for token phases, PAC increases on targeted heads relative to random‑φ baselines. See bar plot with APC vs. baseline:
+Using the decoder mode for token phases (decoder trained on `sem_mask_train.jsonl`) and selecting layer-0 hidden states via `--phase-layers 0`, PAC increases on targeted heads relative to random-φ baselines. See bar plot with APC vs. baseline:
 
 ![pac_apc_vs_baseline](figs/pac_apc_vs_baseline.png)
 
 Caption (Figure 2). PAC (APC vs random‑φ baseline, top‑K items) with dynamic y‑axis scaling and value annotations; clear margins over baseline indicate token‑phase attraction to lattice rays.
 
-Example (n=7, β=0.35, N≈500):
-- Layer 0, o_proj.h9: APC ≈ 0.660 vs baseline 0.356, p≈0.11.
-- Layer 0, o_proj.h4: APC ≈ 0.660 vs baseline 0.356, p≈0.11.
+Example (n=7, β=0.35, N≈500, phase layer 0):
+- Layer 0, o_proj.h9: APC ≈ 0.400 vs baseline 0.350, p≈0.03.
+- Layer 0, o_proj.h7: APC ≈ 0.406 vs baseline 0.350, p≈0.002.
 
 PAC remains stable under repeated sampling; per‑part results track layer‑wise φ and DPN.
 

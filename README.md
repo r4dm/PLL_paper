@@ -32,12 +32,14 @@ python scripts/make_geometry_figs.py \
 python scripts/render_geometry_plots.py \
   --csv figs/geometry_summary.csv --out-dir figs
 
-# 3) PAC audit (decoder mode)
+# 3) PAC audit (decoder mode, phase layer 0)
 python -m pll.pac_audit \
-  --texts-file data/texts.jsonl \
+  --texts-file data/sem_mask_train.jsonl --max-texts 500 \
+  --phase-layers 0 \
+  --weight-layers 0 \
   --decoder models/decoder_v2 \
   --out runs/apc_before.json \
-  --n 7 --beta 0.35 --baseline-trials 50 --per-head
+  --n 7 --beta 0.35 --baseline-trials 1000 --per-head
 
 # 4) Train PLA (o_proj.h8)
 python -m pll.train_pla \

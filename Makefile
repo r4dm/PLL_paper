@@ -9,7 +9,14 @@ warmup:
 	@echo "ok" > runs/warmup_ok.txt
 
 pac:
-	$(PY) -m pll.pac_audit --texts-file data/texts.jsonl --decoder models/decoder_v2 --out runs/apc_before.json --n 7 --beta 0.35 --baseline-trials 50 --per-head
+	$(PY) -m pll.pac_audit \
+		--texts-file data/sem_mask_train.jsonl \
+		--max-texts 500 \
+		--phase-layers 0 \
+		--weight-layers 0 \
+		--decoder models/decoder_v2 \
+		--out runs/apc_before.json \
+		--n 7 --beta 0.35 --baseline-trials 1000 --per-head
 
 pla-train:
 	$(PY) -m pll.train_pla --pla_layer 0 --pla_part o_proj --pla_heads 8 --pla_n 7 --pla_beta 0.35 --pla_lambda 0.15 --pla_mu 0.02 --texts_file data/sem_mask_train.jsonl --decoder models/decoder_v2 --outdir runs/pla

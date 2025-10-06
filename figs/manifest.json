@@ -1,72 +1,20 @@
 {
-  "generated_by": [
-    "python scripts/geometry_probe.py ...",
-    "python scripts/make_geometry_figs.py ...",
-    "python scripts/make_pac_figs.py ...",
-    "python scripts/make_pla_ablation_figs.py ...",
-    "python scripts/extract_piecewise_sps.py ..."
-  ],
   "inputs": [
     {
-      "type": "geometry",
-      "path": "runs/geometry_probe_full_0_6_11.json",
-      "sha256": "72c9be9e23ef6facaa978b13b8173b056847534b60db26eb7f5d9780c323c493"
+      "path": "runs/apc_before.json",
+      "sha256": "544316009d32aeaa8e7e6b1c7d55cdf69d336b5c8232355f2bc1b68396e7686c",
+      "count": 16
     },
     {
-      "type": "pac_csv",
-      "path": "figs/pac_summary.csv",
-      "sha256": "25f849ec988c298fc1474d21d63e28ac95fc26cc578f8dd8fe1eb0d8a7e8d8f0"
+      "path": "runs/apc_after.json",
+      "sha256": "a4b883f83b4ce9ac2df662f2aaee2dc0c74e588945098f519d158543d54224e1",
+      "count": 1
     },
     {
-      "type": "pla_run",
-      "path": "runs/pla",
-      "sha256": "3c243351a427ff2c23ecb9ce3da9e41adbcd5d12b8033a2a2832822d86ab4bdc",
-      "has_apc": true,
-      "has_geom": true
-    },
-    {
-      "type": "pla_run",
-      "path": "runs/pla_l0_v_h3_n7_mu001_l010_steps600_oonly",
-      "sha256": "fae67498652006aabb74124549472c9fb4512577a34d470e2d82ea11d4c24ce3",
-      "has_apc": true,
-      "has_geom": true
-    },
-    {
-      "type": "pla_run",
-      "path": "runs/pla_l0_v_h3_n7_mu001_l010_steps200_oonly",
-      "sha256": "a58687b2cb3d8026a6f5e0da3eec05f609e765d2e40e174ad138fdb550f151f6",
-      "has_apc": true,
-      "has_geom": true
-    },
-    {
-      "type": "pla_run",
-      "path": "runs/pla_l0_v_h3_n7_mu002_l015_steps300_all",
-      "sha256": "033812b4b6815a4c78c2ab5d0441565f75509349afdb41ca043b36262cf933d2",
-      "has_apc": true,
-      "has_geom": true
-    },
-    {
-      "type": "pla_run",
-      "path": "runs/pla_l0_o_h8_n7_mu002_l015_steps600_all",
-      "sha256": "0677f14127bbbccacbe8dba636af03ae297a7ffdd118154977f70b9304ea553a",
-      "has_apc": true,
-      "has_geom": true
-    },
-    {
-      "type": "piecewise_run",
-      "path": "runs/piecewise_sps_l0_mlp_gate.json",
-      "sha256": "f7092be1b210081728cbfff65d5f47a7f7e4910d5c08554039089c6add7df970"
-    },
-    {
-      "type": "piecewise_run",
-      "path": "runs/piecewise_sps_l0_mlp_up.json",
-      "sha256": "a4cbb5ae8e9af4a7b26bade69a3493aa9f1a0097716ce2038b3d8cb5ba5dc197"
-    },
-    {
-      "type": "piecewise_run",
-      "path": "runs/piecewise_sps_l0_mlp_down.json",
-      "sha256": "6559fef1d18913e10c1c921197cd96e6fbb51b0119043bfcdba5407ed02bd4d0"
+      "path": "runs/pla/apc_before_after.json",
+      "sha256": "323ee5ba40472a1a895984587e39be0cf2caec7dbda42185c9ab23a07810d2e5",
+      "count": 0
     }
   ],
-  "rows": 10
+  "rows": 17
 }

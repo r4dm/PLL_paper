@@ -1,0 +1,4 @@
+file,coverage_kept,regions,frac_r2_ge_0_9,median_terms
+piecewise_smv_l0_mlp_gate.json,1.0,5,0.600,1
+piecewise_smv_l0_mlp_up.json,1.0,9,0.778,0
+piecewise_smv_l0_mlp_down.json,1.0,9,0.889,0

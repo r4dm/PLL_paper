@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pll-paper"
+version = "0.1.0"
+description = "Minimal artifact for Phase-Lattice Logic (PLL): PAC/PLA/PSPS demo"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "Maxim Radaev", email = "radaevm@gmail.com" }]
+dependencies = [
+  # Use versions compatible with current project environment
+  "numpy>=2.3.1",
+  "pandas>=2.3.1",
+  "matplotlib>=3.10.3",
+  "torch>=2.2",
+  "transformers>=4.44",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pll*"]
+
+

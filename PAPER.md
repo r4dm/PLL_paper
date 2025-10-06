@@ -1,6 +1,6 @@
-# Bridge: PLL Algebra in LLMs — From Geometry to Behavior
+# Bridge: PLL Algebra in LLMs — From Geometry to Behavior (commit 702a396, 2025-10-06)
 
-Date: 2025‑10
+Date: 2025‑10‑06
 Repository: PLL_paper
 
 

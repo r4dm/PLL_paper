@@ -30,7 +30,7 @@ def _resolve_model_source() -> str:
         path = Path(local_override).expanduser().resolve()
         if path.exists():
             return str(path)
-    models_root = Path(__file__).resolve().parent.parent / "models"
+    models_root = Path(__file__).resolve().parents[2] / "models"
     if models_root.exists():
         candidates = []
         base = models_root / "base"
@@ -42,7 +42,7 @@ def _resolve_model_source() -> str:
         for cand in candidates:
             if any((cand / fname).exists() for fname in ("config.json", "generation_config.json", "tokenizer_config.json")):
                 return str(cand)
-    return os.environ.get("PLL_MODEL", "Qwen/Qwen2.5-0.5B-Instruct")
+    return os.environ.get("PLL_MODEL", "Qwen/Qwen3-0.6B")
 
 
 def _load_model_and_tokenizer(device: str) -> Tuple[AutoModelForCausalLM, AutoTokenizer]:

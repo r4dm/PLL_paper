@@ -25,7 +25,9 @@ class PhaseRay:
         if n is None:
             raise AttributeError("PhaseRay missing lattice size metadata")
         idx = (self.index + n // 2) % n if n % 2 == 0 else (n - self.index) % n
-        return PhaseRay(index=idx, angle=(self.angle + math.pi) % (2 * math.pi), name=f"PR{idx}_C{n}")
+        ray = PhaseRay(index=idx, angle=(self.angle + math.pi) % (2 * math.pi), name=f"PR{idx}_C{n}")
+        object.__setattr__(ray, "_n", n)
+        return ray
 
 
 class PhaseGroup:

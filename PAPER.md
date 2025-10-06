@@ -363,7 +363,7 @@ Block‑level bound. If a fraction ρ of rows in a weight matrix W is modified u
 ∥ΔW∥_F² = Σ_{i∈S} ∥Δw_i∥₂² ≤ 4 λ² Σ_{i∈S} ∥w_i∥₂² sin²(δ_i/2), |S|=ρ·m,
 and ∥ΔW∥₂ ≤ ∥ΔW∥_F. In residual networks with 1‑Lipschitz nonlinearities, this induces a small change in logits controlled by the product of layer Jacobian norms and ∥ΔW_t∥₂. For early layers, moderate λ, small ρ, and small δ, the effect on PPL is negligible—consistent with our measurements.
 
-### B. Additional figures and tables (planned)
+### B. Additional figures and tables
 
 - Geometry summary per layer/part: coverage, mean angular deviation, var2/var3, DPN S1/S2.
 - PAC per‑head before/after PLA with baselines and p‑values; token phase rose plots.

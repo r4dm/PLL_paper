@@ -1,3 +1,6 @@
+[![DOI](https://sandbox.zenodo.org/badge/1070600457.svg)](https://handle.test.datacite.org/10.5072/zenodo.345177)
+
+
 # PLL Paper Artifact (Minimal)
 
 This repository contains the implementation and experimental artifacts for the paper **"Bridge: PLL Algebra in LLMs — From Geometry to Behavior"** ([PAPER.md](PAPER.md)).

@@ -1,3 +1,6 @@
+[![DOI](https://sandbox.zenodo.org/badge/1070600457.svg)](https://handle.test.datacite.org/10.5072/zenodo.345177)
+
+
 # Bridge: PLL Algebra in LLMs — From Geometry to Behavior (commit 702a396, 2025-10-06)
 
 Date: 2025‑10‑06

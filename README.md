@@ -22,8 +22,9 @@ For detailed methodology, results, and discussion, see [PAPER.md](PAPER.md).
 Quickstart
 
 ```bash
-# 1) Install
+# 1) Install & Download model
 pip install -e .
+huggingface-cli download Qwen/Qwen3-0.6B --local-dir models/Qwen3-0.6B --local-dir-use-symlinks False
 
 # 2) Geometry probe + figures
 python scripts/geometry_probe.py \

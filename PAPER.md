@@ -1,4 +1,4 @@
-[![DOI](https://sandbox.zenodo.org/badge/1070600457.svg)](https://handle.test.datacite.org/10.5072/zenodo.345177)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17727812.svg)](https://doi.org/10.5281/zenodo.17727812)
 
 
 # Bridge: PLL Algebra in LLMs — From Geometry to Behavior (commit 702a396, 2025-10-06)
